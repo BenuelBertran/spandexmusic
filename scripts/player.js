@@ -20,11 +20,13 @@ window.addEventListener("load", function() {
   albumButton.addEventListener("click", function (evt) {
     evt.preventDefault();
     album.classList.toggle("hidden");
+    albumButton.classList.toggle("btn__album--close");
   });
   
   songsListButton.addEventListener("click", function (evt) {
     evt.preventDefault();
     songs.classList.toggle("hidden");
+    songsListButton.classList.toggle("btn__songs--close");
   });
   
   play.addEventListener("click", function () {

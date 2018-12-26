@@ -125,12 +125,17 @@ body {
   width: 10px;
   height: 10px;
   border-top: 10px solid transparent;
-  border-right: 15px solid #2c3e50;
+  border-right: none;
   border-bottom: 10px solid transparent;
-  border-left: none;
+  border-left: 15px solid #2c3e50;
   
   background-color: transparent;
   cursor: pointer;
+}
+
+.btn__album--close {
+  border-right: 15px solid #2c3e50;
+  border-left: none;
 }
 
 
@@ -140,12 +145,17 @@ body {
   left: 265px;
   
   border-top: 10px solid transparent;
-  border-right: none;
+  border-right: 15px solid #2c3e50;
   border-bottom: 10px solid transparent;
-  border-left: 15px solid #2c3e50;
+  border-left: none;
   
   background-color: transparent;
   cursor: pointer;
+}
+
+.btn__songs--close {
+  border-right: none;
+  border-left: 15px solid #2c3e50;
 }
 
 .hidden {

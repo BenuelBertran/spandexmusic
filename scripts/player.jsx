@@ -42,7 +42,7 @@ class Container extends React.Component {
 
 const Album = (props) => {
   return (
-    <div className="album player__album hidden">
+    <div className="album player__album">
       <h2 className="album__title">Album<br/> cover</h2>
       <div className="album__border">
         <p className="album__add">Add picture here</p>
@@ -53,7 +53,7 @@ const Album = (props) => {
 
 const SongsList = (props) => {
   return (
-    <div className="songs player__songs-list hidden">
+    <div className="songs player__songs-list">
       <h2 className="songs__title">Songs<br/> list</h2>
       <p className="songs__add">Drag'N'Drop<br/> your music inside</p>
     </div>
