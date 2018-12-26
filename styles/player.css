@@ -1,0 +1,205 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  
+  background: #f9f9f9;
+}
+
+.player {
+  display: flex;
+  width: 1200px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 300px;
+}
+
+.player__album {
+  width: 300px;
+  border: 2px solid #2c3e50;
+  border-right: none;
+  background-image: linear-gradient(white 10%, rgba(90, 150, 200, 1) 100%);
+}
+
+.player__play-button {
+  width: 600px;
+  border: 2px solid #2c3e50;
+  background-image: linear-gradient(white 10%, rgba(90, 150, 200, 1) 100%);
+}
+
+.player__songs-list {
+  width: 300px;
+  border: 2px solid #2c3e50;
+  border-left: none;
+  background-image: linear-gradient(white 10%, rgba(90, 150, 200, 1) 100%);
+}
+
+.play {
+  position: relative;
+  left: 10px;
+  
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 60px solid #2c3e50;
+  margin: 100px auto 50px auto;
+  
+  transition: all 0.3s;
+}
+
+.play::before {
+  position: absolute;
+  content: '';
+  top: -75px;
+  right: -35px;
+  bottom: -75px;
+  left: -115px;
+  
+  border: 10px solid #2c3e50;
+  border-radius: 50%;
+  
+  transition: all 0.3s;
+}
+
+.play::after {
+  position: absolute;
+  content: '';
+  
+  opacity: 0;
+  transition: opacity 0.6s;
+}
+
+.play:hover::before,
+.play:focus::before {
+  transform: scale(1.1);
+}
+
+.play.active {
+  border-color: transparent;
+}
+
+.play.active::after {
+  position: absolute;
+  content: '';
+  top: -40px;
+  right: 8px;
+  
+  width: 25px;
+  height: 80px;
+  border-right: 20px solid #2c3e50;
+  border-left: 20px solid #2c3e50;
+  
+  opacity: 1;
+}
+
+.btn__title {
+  margin-bottom: 0;
+  
+  font-size: 2em;
+  color: #34495e;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.album__title,
+.songs__title {
+  position: relative;
+  margin-bottom: 0;
+  
+  font-size: 1.3em;
+  color: #34495e;
+  text-transform: uppercase;
+}
+
+.btn__choice {
+  width: 600px;
+  padding-left: 187px;
+}
+
+.btn__album {
+  position: relative;
+  top: -280px;
+  left: -265px;
+  
+  width: 10px;
+  height: 10px;
+  border-top: 10px solid transparent;
+  border-right: 15px solid #2c3e50;
+  border-bottom: 10px solid transparent;
+  border-left: none;
+  
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+.btn__songs {
+  position: relative;
+  top: -280px;
+  left: 265px;
+  
+  border-top: 10px solid transparent;
+  border-right: none;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #2c3e50;
+  
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.album__title:before,
+.songs__title:before {
+  position: absolute;
+  content: "";
+  top: 60px;
+  left: 95px;
+  
+  width: 100px;
+  height: 2px;
+  
+  background-color: #34495e;
+}
+
+.sssr-btn {
+  padding-top: 50px;
+  
+  background-image: url(../images/7CHv.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sssr-album {
+  background-image: url(../images/Mustache.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sssr-songs {
+  background-image: url(../images/Beard.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.album__border {
+  width: 200px;
+  height: 200px;
+  margin: 60px auto;
+  border: 2px solid #34495e;
+  
+  background-color: #E6E6E6;
+}
+
+.album__add {
+  padding-top: 70px;
+  opacity: 0.5;
+}
+
+.songs__add {
+  padding-top: 100px;
+  opacity: 0.5;
+}
