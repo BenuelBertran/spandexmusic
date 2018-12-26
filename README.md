@@ -1,1 +1,1 @@
-Ссылка на резюме: https://benuelbertran.github.io/spandexmusic/index.html
+Демо: https://benuelbertran.github.io/spandexmusic/index.html
